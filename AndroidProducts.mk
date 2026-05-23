@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_tb128fu.mk
+    $(LOCAL_DIR)/infinity_tb128fu.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_tb128fu-user \
-    lineage_tb128fu-userdebug \
-    lineage_tb128fu-eng
+    infinity_tb128fu-user \
+    infinity_tb128fu-userdebug \
+    infinity_tb128fu-eng
