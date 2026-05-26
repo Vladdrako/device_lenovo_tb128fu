@@ -17,6 +17,10 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Display configs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/displayconfig/default.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/displayconfig/default.xml
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2000
 TARGET_SCREEN_WIDTH := 1200

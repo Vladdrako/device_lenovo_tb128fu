@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Display configuration for XiaoXin Pad 2022 (tb128fu)
+Resolution: 1200x2000, Density: 240, Refresh rate: 60Hz
+-->
+<displayConfiguration>
+    <display>
+        <name>panel_0</name>
+        <defaultMode>
+            <width>1200</width>
+            <height>2000</height>
+            <refreshRate>60.0</refreshRate>
+        </defaultMode>
+        <mode>
+            <id>0</id>
+            <width>1200</width>
+            <height>2000</height>
+            <refreshRate>60.0</refreshRate>
+        </mode>
+    </display>
+    <densityMapping>
+        <density>
+            <height>2000</height>
+            <width>1200</width>
+            <density>240</density>
+        </density>
+    </densityMapping>
+</displayConfiguration>
