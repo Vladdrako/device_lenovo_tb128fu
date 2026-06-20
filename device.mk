@@ -36,3 +36,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+PRODUCT_VENDOR_PROPERTIES += \
+    wifi.interface=wlan0
