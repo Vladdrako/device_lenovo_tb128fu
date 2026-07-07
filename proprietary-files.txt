@@ -301,7 +301,10 @@ vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin
 vendor/firmware/wigig/wigig.ini
 
-# Thermal engine
+# Thermal
+vendor/bin/thermal-engine
+vendor/etc/init/init_thermal-engine.rc
+vendor/etc/thermal-engine-tb128fu.conf
 vendor/etc/thermal-engine.conf
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
+vendor/lib/libthermalclient.so
+vendor/lib64/libthermalclient.so

@@ -11,6 +11,7 @@ $(call inherit-product, device/lenovo/sm6225-common/bengal.mk)
 $(call inherit-product, vendor/lenovo/tb128fu/tb128fu-vendor.mk)
 
 # API Level
+BOARD_SHIPPING_API_LEVEL := 30
 PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Audio configs
@@ -36,6 +37,3 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-PRODUCT_VENDOR_PROPERTIES += \
-    wifi.interface=wlan0
