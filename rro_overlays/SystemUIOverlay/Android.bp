@@ -1,0 +1,7 @@
+runtime_resource_overlay {
+    name: "SystemUIOverlay",
+    theme: "SystemUIOverlay",
+    sdk_version: "current",
+    resource_dirs: ["res"],
+    product_specific: true,
+}
