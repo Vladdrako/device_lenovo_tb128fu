@@ -520,19 +520,6 @@
         <ctl name="EC Reference Channels" value="Two"/>
     </path>
 
-    <path name="echo-reference-voip bt-sco">
-        <ctl name="AUDIO_REF_EC_UL10 MUX" value="SLIM_7_RX" />
-        <ctl name="EC Reference Channels" value="Two"/>
-    </path>
-
-    <path name="echo-reference-voip bt-sco-wb">
-        <path name="echo-reference-voip bt-sco" />
-    </path>
-
-    <path name="echo-reference-voip bt-sco-swb">
-        <path name="echo-reference-voip bt-sco" />
-    </path>
-
     <path name="deep-buffer-playback">
         <ctl name="PRI_TDM_RX_0 Audio Mixer MultiMedia1" value="1" />
     </path>
@@ -2531,7 +2518,7 @@
     </path>
 
     <path name="spkr-vi-record">
-	<ctl name="PRI_TDM_RX_VI_FB_MUX"  value="PRI_TDM_TX_0" />
+	     <ctl name="PRI_TDM_RX_VI_FB_MUX"  value="PRI_TDM_TX_0" />
     </path>
 
     <!-- These are actual sound device specific mixer settings -->
@@ -3245,8 +3232,8 @@
     </path>
 
     <path name="low-latency-playback speaker-and-bt-a2dp">
-        <path name="low-latency-playback bt-a2dp" />
-        <path name="low-latency-playback" />
+	<path name="low-latency-playback" />
+	<path name="low-latency-playback bt-a2dp" />
     </path>
 
     <path name="low-latency-playback speaker-safe-and-bt-a2dp">
@@ -3744,28 +3731,28 @@
         <ctl name="aw_dev_3_switch" value="Enable" />
     </path>
 
-    <path name="speaker-left-top">
+    <path name="speaker-right-top">
         <ctl name="aw_dev_0_switch" value="Disable" />
         <ctl name="aw_dev_1_switch" value="Enable" />
         <ctl name="aw_dev_2_switch" value="Disable" />
         <ctl name="aw_dev_3_switch" value="Disable" />	
     </path>
 
-    <path name="speaker-right-top">
+    <path name="speaker-right-btn">
         <ctl name="aw_dev_0_switch" value="Disable" />
         <ctl name="aw_dev_1_switch" value="Disable" />
         <ctl name="aw_dev_2_switch" value="Enable" />
         <ctl name="aw_dev_3_switch" value="Disable" />
     </path>
 
-    <path name="speaker-left-btn">
+    <path name="speaker-left-top">
         <ctl name="aw_dev_0_switch" value="Enable" />
         <ctl name="aw_dev_1_switch" value="Disable" />
         <ctl name="aw_dev_2_switch" value="Disable" />
         <ctl name="aw_dev_3_switch" value="Disable" />	
     </path>
 
-    <path name="speaker-right-btn">
+    <path name="speaker-left-btn">
         <ctl name="aw_dev_0_switch" value="Disable" />
         <ctl name="aw_dev_1_switch" value="Disable" />
         <ctl name="aw_dev_2_switch" value="Disable" />
@@ -3805,12 +3792,15 @@
     </path>
 
     <path name="low-latency-playback headphones-88">
-        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia5" value="1" />
+	<ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia5" value="1" />
     </path>
 
     <path name="deep-buffer-playback headphones-88">
+	<ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia1" value="1" />
 	<ctl name="RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_4" value="1" />
-        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia1" value="1" />
+	<ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
+	<ctl name="ADC2 Volume" value="0" />
+	<ctl name="TX_DEC0 Volume" value="84" />
     </path>
 
     <path name="deep-buffer-playback headphones-ata">
@@ -3818,23 +3808,15 @@
 	<ctl name="RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_4" value="1" />
 	<ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
 	<ctl name="ADC2 Volume" value="0" />
-	<ctl name="TX_DEC0 Volume" value="94" />
+	<ctl name="TX_DEC0 Volume" value="84" />
     </path>
 
     <path name="low-latency-playback headphones-ata">
 	<ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia5" value="1" />
-	<ctl name="RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_4" value="1" />
-	<ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
-	<ctl name="ADC2 Volume" value="0" />
-	<ctl name="TX_DEC0 Volume" value="94" />
     </path>
 
     <path name="compress-offload-playback2 headphones-ata">
 	<ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia7" value="1" />
-	<ctl name="RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_4" value="1" />
-	<ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
-	<ctl name="ADC2 Volume" value="0" />
-        <ctl name="TX_DEC0 Volume" value="94" />
     </path>
 
     <path name="audio-record headset-mic-88">

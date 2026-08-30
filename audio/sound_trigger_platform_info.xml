@@ -37,7 +37,7 @@
 <!--- 0x0105: Select <lsm_usecase> based on capture device                      -->
 
     <common_config>
-        <param implementer_version="0x0101" />
+        <param implementer_version="0x13e16429" />
         <param max_ape_sessions="8" />
         <param enable_failure_detection="false" />
         <param support_device_switch="false" />
@@ -259,7 +259,7 @@
         <param sample_rate="16000" />
         <param bit_width="16" />
         <param out_channels="1"/> <!-- Module output channels -->
-        <param get_module_version="true" />
+        <param get_module_version="false" />
         <lsm_usecase>
             <param capture_device="HANDSET" />
             <!-- adm_cfg_profile should match with the one defined under adm_config -->
