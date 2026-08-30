@@ -28,4 +28,10 @@ PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc=$(call normalize-path-list,"qssi-user 12 SKQ1.220119.001 13.5.476_220805 release-keys")
 
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.carrier=wifi-only
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.carrier=wifi-only
+
 BUILD_FINGERPRINT := Lenovo/P89990JA1/TB128FU:12/SKQ1.220119.001/13.5.476_220805:user/release-keys
