@@ -3,6 +3,12 @@
     <!-- Blur radius behind Notification Shade -->
     <dimen name="max_shade_window_blur_radius">17dp</dimen>
 
-   <!-- for 20dp of padding at 3.5px/dp at default density -->
-   <dimen name="rounded_corner_content_padding">0.0dip</dimen>
+    <!-- REMOVED: rounded_corner_content_padding
+         This resource is defined in framework-res
+         (frameworks/base/core/res/res/values/dimens.xml), not in
+         com.android.systemui. It was overlayed here, so idmap2d had no
+         matching entry in the SystemUI target and the value never applied.
+         Verified with aapt2 against the installed SystemUI.apk.
+         If you want to change it, put it in FrameworkOverlay, which
+         targets "android". -->
 </resources>

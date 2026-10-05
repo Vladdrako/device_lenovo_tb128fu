@@ -18,7 +18,10 @@
     <!-- Audio & Hardware features -->
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
     <integer name="config_shutdownBatteryTemperature">680</integer>
-    <integer name="config_bluetooth_operating_voltage_mv">3300</integer>
+    <!-- REMOVED: config_bluetooth_operating_voltage_mv
+         Only defined as a PRIVATE symbol in framework-res symbols.xml,
+         so an RRO cannot overlay it. It has to be set as a build
+         property instead. -->
     <bool name="config_showNavigationBar">true</bool>
     <bool name="config_useDevInputEventForAudioJack">true</bool>
     <bool name="config_supportAudioSourceUnprocessed">true</bool>

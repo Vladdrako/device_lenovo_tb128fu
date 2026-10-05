@@ -9,6 +9,11 @@
 
     <!-- Doze: check proximity sensor before pulsing? -->
     <bool name="doze_proximity_check_before_pulse">false</bool>
-    <bool name="config_proximityCheckOnWake">false</bool>
-    <bool name="config_proximityCheckOnWakeEnabledByDefault">false</bool>
+
+    <!-- REMOVED: config_proximityCheckOnWake
+         REMOVED: config_proximityCheckOnWakeEnabledByDefault
+         Neither name exists in the installed com.android.systemui.apk
+         (verified with aapt2 dump resources), so both were silently
+         ignored. The proximity-on-wake feature is not present in this
+         SystemUI build. -->
 </resources>

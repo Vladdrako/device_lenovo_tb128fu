@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Hide telephony entries on this tablet (no SIM slot). -->
     <bool name="config_show_call_volume">false</bool>
     <bool name="config_show_data_saver">false</bool>
     <bool name="config_show_emergency_gesture_settings">false</bool>
-    <bool name="config_show_mobile_plan">false</bool>
     <bool name="config_show_sim_info">false</bool>
+
+    <!-- REMOVED: config_show_mobile_plan
+         This name is not defined anywhere in the Settings app in this
+         tree, so it never applied. "Data saver" above is the equivalent
+         toggle that does exist. -->
 </resources>
