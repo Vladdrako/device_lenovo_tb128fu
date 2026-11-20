@@ -6,6 +6,10 @@
 
 DEVICE_PATH := device/lenovo/tb128fu
 
+# Fastboot
+TARGET_BOARD_FASTBOOT_INFO_FILE := $(DEVICE_PATH)/fastboot-info.txt
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
 # Display
 TARGET_SCREEN_DENSITY := 240
 
