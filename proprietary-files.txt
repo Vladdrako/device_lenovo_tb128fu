@@ -62,7 +62,6 @@ vendor/etc/awinic_cali.wav
 vendor/firmware/aw882xx_pid_2013_acf.bin
 
 # Audio HAL
-vendor/lib/hw/audio.primary.bengal.so
 vendor/lib/libaudio_log_utils.so
 
 # Audio FX
